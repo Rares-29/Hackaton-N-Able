@@ -1,0 +1,139 @@
+<%- include("./partials/header"); -%>
+<body style = "  color: #1a202c;
+text-align: left;
+background-color: #e2e8f0;">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img src="/image-removebg-preview (2).png" style="width: 50px; height: 50px; margin-left: 20px;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item" style="margin-left: 880px;">
+                <a class="nav-link" href="/">Home</a>
+                <li class="nav-item" style="margin-left: 0px;">
+                  <a class="nav-link" href="/shop">Shop</a>
+                  <li class="nav-item" style="margin-left: 0px;">
+                    <a class="nav-link" href="/profile">Profile</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+<br>
+<div class="container">
+    <div class="main-body">
+          <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+              <div class="card" style="padding-bottom: 12px;">
+                <div class="card-body">
+                  <div class="d-flex flex-column align-items-center text-center">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                    <div class="mt-3">
+                      <h4><%= user %></h4>
+                      <p class="text-secondary mb-1">Recycler</p>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 mb-3" style="margin-top: 18px; height: 186px;">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <img src="/iconita1.png" style="margin-top: 20px;">
+                    <p style="float: right; padding-right: 20px; padding-top: 50px;">Standard coal saved:
+                    <br>
+                    0.193<sub>(tons)</sub>
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-8">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Puncte:</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      <%= points %>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Numar reciclari:</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      <%= reciclari %>
+                    </div>
+                  </div>
+
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Oferta activa:</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      <%= off %>
+                    </div>
+                  </div>
+                <br>
+                <br>
+                  
+                </div>
+              </div>
+
+              <div class="row gutters-sm">
+                <div class="col-sm-6 mb-3">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <img src="/iconita2.png">
+                      <p style="float: right; padding-right: 50px; padding-top: 50px;">CO<sub>2</sub> avoided:
+                        <br>
+                        0.229<sub>(tons)</sub>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 mb-3">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <img src="/iconita3.png">
+                      <p style="float: right; padding-top: 50px;">Equivalent trees planted:
+                        <br>
+                        1.00
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
+                
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+<footer>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="index.html">GreenLight</a>
+  </div>
+</footer>
+
+</body>
+</html>
